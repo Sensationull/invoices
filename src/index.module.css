@@ -20,7 +20,7 @@
   font-weight: 100 900;
 }
 
-.header-large {
+.headerLarge {
   font-family: 'League Spartan', sans-serif;
   font-size: 36px;
   font-weight: 700;
@@ -28,7 +28,7 @@
   letter-spacing: -1px;
 }
 
-.header-medium {
+.headerMedium {
   font-family: 'League Spartan', sans-serif;
   font-size: 24px;
   font-weight: 700;
@@ -36,7 +36,7 @@
   letter-spacing: -0.75px;
 }
 
-.header-small {
+.headerSmall {
   font-family: 'League Spartan', sans-serif;
   font-size: 15px;
   font-weight: 700;
@@ -44,7 +44,7 @@
   letter-spacing: -0.25px;
 }
 
-.header-small-variant {
+.headerSmallVariant {
   font-family: 'League Spartan', sans-serif;
   font-size: 15px;
   font-weight: 700;
@@ -52,7 +52,7 @@
   letter-spacing: -0.25px;
 }
 
-.body-text-medium {
+.bodyTextMedium {
   font-family: 'League Spartan', sans-serif;
   font-size: 13px;
   font-weight: 500;
@@ -60,7 +60,7 @@
   letter-spacing: -0.1px;
 }
 
-.body-text-medium-variant {
+.bodyTextMediumVariant {
   font-family: 'League Spartan', sans-serif;
   font-size: 13px;
   font-weight: 500;

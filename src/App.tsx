@@ -1,7 +1,7 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
-import "./App.css";
+import styles from "./App.module.css";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -21,7 +21,7 @@ function App() {
 
       <h1>Vite + React</h1>
 
-      <div className="header-large">
+      <div className={styles.headerLarge}>
         <button onClick={increment}>count is {count}</button>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
