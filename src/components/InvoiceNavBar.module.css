@@ -1,3 +1,47 @@
 .container {
-    border: 1px solid blue;
+    background-color: var(--navbar-color);
 }
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+    .container {
+        height: 72px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logoContainer {
+        height: 72px;
+        width: 72px;
+        background-color: var(--primary-light-button-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .iconContainer {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        padding-right: 24px;
+    }
+    .avatarContainer {
+       height: 72px;
+       width: 96px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       border-left: 1px solid var(--navbar-divider-color);
+    }
+    .avatar {
+        height: 32px;
+        width: 32px;
+        border-radius: 50%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        border: 1px solid green;
+    }
+}
+
