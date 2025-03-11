@@ -2,6 +2,13 @@
     background-color: var(--navbar-color);
 }
 
+.darkModeButton {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    fill: var(--navbar-icon-color);
+}
+
 @media screen and (min-width: 375px) and (max-width: 768px) {
     .container {
         height: 72px;
