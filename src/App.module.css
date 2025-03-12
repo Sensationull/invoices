@@ -1,5 +1,7 @@
 .container {
     border: 1px solid red;
     height: 100vh;
+    height: 100svh;
+    background-color: var(--background-color);
 }
 

@@ -11,26 +11,28 @@
   --delete-hover-button-color: hsl(0, 100%, 80%);
   --tertiary-button-color: hsl(240, 27%, 98%);
   --tertiary-button-hover-color: hsl(233, 30%, 11%);
-  --navbar-color: hsl(231.43, 20.29%, 27.06%);
   --navbar-divider-color: hsl(231.89, 20.22%, 35.88%);
   --mobile-breakpoint: 375px; /* cant use these variables in media queries, just for reference */
   --tablet-breakpoint: 768px; /* cant use these variables in media queries, just for reference */
   --desktop-breakpoint: 1024px; /* cant use these variables in media queries, just for reference */
   --light-background-color: hsl(240, 27.27%, 97.84%);
   --dark-background-color: hsl(232.94, 29.82%, 11.18%);
-  --navbar-icon-color: hsl(231.3, 36.51%, 62.94%)
+  --navbar-icon-color: hsl(231.3, 36.51%, 62.94%);
+  --navbar-mode-color: hsl(231.43, 20.29%, 27.06%);
 }
 
 [data-theme="light"] {
   --button-color: var(--primary-light-button-color);
   --button-hover-color: var(--primary-light-hover-button-color);
   --background-color: var(--light-background-color);
+  --navbar-mode-color: var(--navbar-color);
 }
 
 [data-theme="dark"] {
   --button-color: var(--primary-dark-button-color);
   --button-hover-color: var(--primary-dark-hover-button-color);
   --background-color: var(--dark-background-color);
+  --navbar-mode-color: var(--dark-background-color);
 }
 
 /* Fonts */
