@@ -1,0 +1,125 @@
+:root {
+  --primary-light-button-color: hsl(252, 94%, 67%);
+  --primary-light-hover-button-color: hsl(252, 100%, 73%);
+  --primary-dark-button-color: hsl(233, 31%, 17%);
+  --primary-dark-hover-button-color: hsl(233, 30%, 21%);
+  --secondary-light-button-color: hsl(231, 73%, 93%);
+  --secondary-light-hover-button-color: hsl(231, 20%, 61%);
+  --secondary-dark-button-color: hsl(231, 37%, 63%);
+  --secondary-dark-hover-button-color: hsl(228, 29%, 7%);
+  --delete-button-color: hsl(0, 80%, 63%);
+  --delete-hover-button-color: hsl(0, 100%, 80%);
+  --tertiary-button-color: hsl(240, 27%, 98%);
+  --tertiary-button-hover-color: hsl(233, 30%, 11%);
+  --navbar-divider-color: hsl(231.89, 20.22%, 35.88%);
+  --mobile-breakpoint: 375px; /* cant use these variables in media queries, just for reference */
+  --tablet-breakpoint: 768px; /* cant use these variables in media queries, just for reference */
+  --desktop-breakpoint: 1024px; /* cant use these variables in media queries, just for reference */
+  --light-background-color: hsl(240, 27.27%, 97.84%);
+  --dark-background-color: hsl(232.94, 29.82%, 11.18%);
+  --navbar-icon-color: hsl(231.3, 36.51%, 62.94%);
+  --navbar-mode-color: hsl(231.43, 20.29%, 27.06%);
+}
+
+[data-theme="light"] {
+  --button-color: var(--primary-light-button-color);
+  --button-hover-color: var(--primary-light-hover-button-color);
+  --background-color: var(--light-background-color);
+  --navbar-mode-color: var(--navbar-color);
+}
+
+[data-theme="dark"] {
+  --button-color: var(--primary-dark-button-color);
+  --button-hover-color: var(--primary-dark-hover-button-color);
+  --background-color: var(--dark-background-color);
+  --navbar-mode-color: hsl(233.33, 31.03%, 17.06%)
+}
+
+/* Fonts */
+@font-face {
+  font-family: 'League Spartan';
+  src: url('./assets/fonts/League_Spartan/LeagueSpartan-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+}
+
+.headerLarge {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: -1px;
+}
+
+.headerMedium {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: -0.75px;
+}
+
+.headerSmall {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.25px;
+}
+
+.headerSmallVariant {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: -0.25px;
+}
+
+.bodyTextMedium {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.1px;
+}
+
+.bodyTextMediumVariant {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: -0.25px;
+}
+
+/* CSS Reset */
+/*******************
+ Box Sizing
+ *******************/
+ html {
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  min-height: 100vh; /* Useful for body to fill the viewport */
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+}
+
+/****************************
+ Remove default margin and paddings
+ ****************************/
+* {
+  margin: 0;
+  padding: 0;
+}

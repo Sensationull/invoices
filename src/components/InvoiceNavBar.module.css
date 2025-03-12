@@ -1,0 +1,123 @@
+.container {
+    border: 1px solid dodgerblue;
+    background-color: var(--navbar-mode-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.darkModeButton {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    fill: var(--navbar-icon-color);
+}
+
+.logoContainer {
+    background-color: var(--primary-light-button-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
+
+.iconContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.avatar {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+}
+
+.avatarContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid var(--navbar-divider-color);
+}
+
+
+/* Mobile */
+@media screen and (min-width: 375px) and (max-width: 768px) {
+    .container {
+        height: 72px;
+        border: 1px solid red;
+    }
+
+    .logoContainer {
+        height: 72px;
+        width: 72px;
+    }  
+
+    .iconContainer {
+        width: 100%;
+        padding-right: 24px;
+    }
+
+    .avatarContainer {
+       height: 72px;
+       width: 96px;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        height: 90px;
+        border: 1px solid green;
+    }
+    .logoContainer {
+        height: 90px;
+        width: 90px;
+    }
+    .iconContainer {
+        width: 100%;
+        padding-right: 24px;
+    }
+    .avatarContainer {
+       height: 90px;
+       width: 96px;
+    }
+    
+}
+
+/* Desktop */
+@media screen and (min-width: 1025px) {
+    .container, .iconContainer {
+        flex-direction: column;
+        width: 103px;
+        justify-content: space-between;
+    }
+
+    .container, .logoContainer {
+        border-top-right-radius: 24px;
+        border-bottom-right-radius: 24px;
+    }
+
+    .iconContainer {
+        height: 100%;
+        padding-bottom: 24px;
+    }
+
+    .logoContainer {
+        height: 103px;
+        width: 100%;
+    }
+
+    .avatar {
+        height: 40px;
+        width: 40px;
+    }
+
+    .avatarContainer {
+        height: 103px;
+        width: 100%;
+        border-left: none;
+        border-top: 1px solid var(--navbar-divider-color);
+    }
+}

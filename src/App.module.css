@@ -1,0 +1,13 @@
+.container {
+    border: 1px solid red;
+    height: 100vh;
+    height: 100svh;
+    background-color: var(--background-color);
+}
+
+@media screen and (min-width: 1025px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+    }
+}
